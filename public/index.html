@@ -3,56 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmers Market WiFi</title>
+    <title>Farmers Market Wi-Fi Provided by Revive IT</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">Farmers Market</a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-links">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-links">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-links">Contact</a>
-                </li>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Revive IT Logo small2.png" alt="My Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="header1">
+        </nav>
+    </header>
+
+    <main>
+        <section class="login-section">
             <img src="mhlfarmersmarket logo.png" alt="mhklogo" width="150" height="150">
-            <h1>Welcome to The MHK Farmers Market!</h1>
-            <h4>Please provide your Name and Email to access the internet.</h4>
-        </div>
-        <div class="content">
-            <div class="form-container">
-                <form id="access-form" class="form" onsubmit="return validateForm()">
-                    <h2>Sign In</h2>
-                    <input type="text" id="full-name" placeholder="Full Name (Required)" required>
-                    <input type="email" id="email" placeholder="Email (Required)" required>
-                    <button type="submit">Access WiFi</button>
-                </form>
-            </div>
-            <div class="ads-container">
-                <h2>Our Technology Partner: </h2>
-                <div class="ads">
-                    <div class="ad">
-                        <img src="reviveit.png" alt="ritlogo" width="400" height="100">
-                        <h3>Residential & Buisness IT Services</h3>
-                        <p>(785) 706-9696</p>
-                        <p>info@reviveit.tech</p>
-                        <p>3808 Vanesta Dr. #110</p>
-                    </div>
-                    <!-- Add more ads here -->
-                </div>
-            </div>
-        </div>
-    </div>
+            <h1>Welcome to Our WiFi</h1>
+            <form class="login-form">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Log In</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mobile Revive | Revive IT Service Center</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
+
